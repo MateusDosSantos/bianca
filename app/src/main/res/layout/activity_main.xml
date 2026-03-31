@@ -6,28 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="0.3"
+    android:background="#DDA0DD"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.3"
+        android:gravity="center"
         android:orientation="vertical">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Trocar Cor de Fundo"
-            android:textSize="34sp" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="IFSULDEMINAS"
+            android:gravity="center"
+            android:text="Formulário"
             android:textSize="34sp" />
     </LinearLayout>
 
@@ -37,25 +33,20 @@
         android:layout_weight="0.3"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Capturar dados"
-            android:textSize="34sp" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Poços de Caldas"
-            android:textSize="34sp" />
+            android:gravity="center"
+            android:text="Dados Pessoais"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.4"
+        android:gravity="bottom"
         android:orientation="horizontal">
 
         <TextView
@@ -63,7 +54,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="nome" />
+            android:gravity="bottom"
+            android:text="Nome:"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/texto"
@@ -71,7 +64,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -86,7 +80,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="idade" />
+            android:text="Idade:"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/texto2"
@@ -94,7 +89,30 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpar Formulário"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Formulário"
+            android:textSize="24sp" />
     </LinearLayout>
 
 </LinearLayout>
