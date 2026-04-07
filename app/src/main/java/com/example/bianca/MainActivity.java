@@ -1,6 +1,7 @@
 package com.example.bianca;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -60,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String nomeCapturado2;
             nomeCapturado2 = texto2.getText().toString();
                     TextView.setText(nomeCapturado2);
+
+            Intent i = new Intent(this, Tela02.class);
+            startActivity(i);
         }
     }
 }
