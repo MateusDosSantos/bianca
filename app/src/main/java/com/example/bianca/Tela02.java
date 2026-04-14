@@ -31,7 +31,7 @@ public class Tela02 extends AppCompatActivity implements View.OnClickListener {
         if (i != null){
             Bundle b = new Bundle();
             b = i.getExtras();
-            if (b! = null){
+            if (b!= null){
             nome = b.getString("nome");
             idade = b.getString("idade");
             }
