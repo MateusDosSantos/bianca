@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,8 +16,7 @@ public class Tela02 extends AppCompatActivity implements View.OnClickListener {
     private Button button4;
     private String nome;
     private String idade;
-    private TextView Nome, Idade;
-    private ImageView imagem1, imagem3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,21 +31,14 @@ public class Tela02 extends AppCompatActivity implements View.OnClickListener {
         if (i != null){
             Bundle b = new Bundle();
             b = i.getExtras();
-            if (b!= null){
+            if (b! = null){
             nome = b.getString("nome");
             idade = b.getString("idade");
             }
         }
-        Nome = findViewById(R.id.textView7);
-        Nome.setText(nome);
-        Idade = findViewById(R.id.textView8);
-        Idade.setText(idade);
-        button4 = findViewById(R.id.button4);
-        imagem1 = findViewById(R.id.imageView);
-        imagem3 = findViewById(R.id.imageView2);
 
-        imagem3.setOnClickListener(this);
-        imagem1.setOnClickListener(this);
+        button4 = findViewById(R.id.button4);
+
         button4.setOnClickListener(this);
     }
 
@@ -64,17 +54,6 @@ public class Tela02 extends AppCompatActivity implements View.OnClickListener {
             startActivity(i);
 
         }
-        {
-        if (v == imagem1);
-            {
-                imagem1.setImageResource(R.drawable.imagem2);
-            }
-            {
-                if (v == imagem3);
-                {
-                    imagem3.setImageResource(R.drawable.imagem4);
-                }
-            }
-        }
+
     }
 }
