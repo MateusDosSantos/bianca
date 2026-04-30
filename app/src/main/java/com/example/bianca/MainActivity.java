@@ -47,8 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v == Button) {
-            TextView.setBackgroundColor(Color.GREEN);
-            TextView2.setBackgroundColor(Color.BLUE);
+        //    TextView.setBackgroundColor(Color.GREEN);
+          //  TextView2.setBackgroundColor(Color.BLUE);
+            startActivity(new Intent(this, MiniJogo.class));
         }
         if (v == Button2) {
             TextView.setTextColor(Color.RED);
