@@ -146,18 +146,50 @@ public class MiniJogo extends AppCompatActivity implements View.OnClickListener{
     if (imagem7 == v){
       imagem7.setImageResource(lista.get(4));
       imagem7.setEnabled(false);
+      if (contaToque==1){
+          imageView11 = imagem7;
+          imagemPrimeiroToque = lista.get(4);
+      } else {
+           imageView12 = imagem7;
+           imagemSegundoToque = lista.get(4);
+           compara(imagemPrimeiroToque, imagemSegundoToque);
+      }
     }
     if (imagem8 == v){
         imagem8.setImageResource(lista.get(5));
         imagem8.setEnabled(false);
+        if (contaToque==1) {
+            imageView11=imagem8;
+            imagemPrimeiroToque = lista.get(5);
+        }else {
+            imageView12=imagem8;
+            imagemSegundoToque = lista.get(5);
+            compara(imagemPrimeiroToque, imagemSegundoToque);
+        }
     }
     if (imagem9 == v){
         imagem9.setImageResource(lista.get(6));
         imagem9.setEnabled(false);
+        if (contaToque==1){
+            imageView11= imagem9;
+            imagemPrimeiroToque = lista.get(6);
+        }else {
+            imageView12 = imagem9;
+            imagemSegundoToque = lista.get(6);
+            compara(imagemPrimeiroToque, imagemSegundoToque);
+        }
     }
     if (imagem10 == v){
         imagem10.setImageResource(lista.get(7));
         imagem10.setEnabled(false);
+        if (contaToque==1){
+            imageView11= imagem10;
+            imagemPrimeiroToque =lista.get(7);
+        }else {
+            imageView12 = imagem10;
+            imagemSegundoToque = lista.get(7);
+            compara(imagemPrimeiroToque, imagemSegundoToque);
+        }
     }
 
     }
@@ -165,9 +197,8 @@ public class MiniJogo extends AppCompatActivity implements View.OnClickListener{
     public void compara(int imagem1, int imagem2){
         contaToque=0;
         if (imagem1 == imagem2){
-            imageView11.setEnabled(false);
+
             imageView11.setBackgroundColor(Color.GREEN);
-            imageView12.setEnabled(false);
             imageView12.setBackgroundColor(Color.GREEN);
 
         }  else
@@ -178,6 +209,9 @@ public class MiniJogo extends AppCompatActivity implements View.OnClickListener{
             h.postDelayed(new Runnable() {
                 @Override
                 public void run() {
+
+                    imageView11.setEnabled(true);
+                    imageView12.setEnabled(true);
 
                     imageView11.setImageResource(R.drawable.imagem7);
 
