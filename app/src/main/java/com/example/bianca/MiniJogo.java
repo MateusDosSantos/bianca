@@ -4,7 +4,9 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +25,8 @@ public class MiniJogo extends AppCompatActivity implements View.OnClickListener{
     private int contaToque =0;
     private int imagemPrimeiroToque, imagemSegundoToque;
     private ImageView imageView11, imageView12;
+    private TextView textView5;
+    private Button button3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +45,10 @@ public class MiniJogo extends AppCompatActivity implements View.OnClickListener{
         imagem8 = findViewById(R.id.imageView8);
         imagem9 = findViewById(R.id.imageView9);
         imagem10 = findViewById(R.id.imageView10);
+
+        textView5 = findViewById(R.id.textView5);
+
+        button3 = findViewById(R.id.button3);
 
 
         imagem3.setOnClickListener(this);
